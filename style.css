@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+body{
+    color: white;
+    background: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.listaCima{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.headerIndex{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid rgb(160, 111, 206);
+}
+
+header img{    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center{
+    margin-top: 30px;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    background: #151320;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+h1{
+    margin-top: 80px;
+    color: rgb(160, 111, 206);
+}
+
+footer img{
+    width: 40px;
+    height: 40px;
+}
+
+footer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+footer a{
+    margin: 20px;
+    text-align: center;
+}
+
+footer p{
+    margin-top: 2px;
+}
+
+footer p:hover{
+    color: rgb(160, 111, 206);
+}
+
+.box{
+    padding: 0px 50px;
+}
+
+nav a:hover{
+    color: rgb(160, 111, 206);
+}
+
+u{
+    text-decoration: none;
+}
+
+.textMain{
+    color: rgb(160, 111, 206);
+}
+
+.experiencias{
+    text-align: justify;
+    margin-inline: 20px;
+    line-height: 25px;
+}
+
+.justificado{
+    text-align: justify;
+    margin-inline: 20px;
+    line-height: 25px;
+}
+
+
+
+.center:before, .center:after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    background: linear-gradient(45deg, #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000, #ffff00, #00ff00, #0099ff, #001aff, #a200ff );
+    background-size: 200%;
+    animation: AnimarBorda 8s linear alternate infinite;
+}
+
+@keyframes AnimarBorda{
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+
+.center:after{
+    filter: blur(50px);
+}
+
+.headerVoltar{ 
+    margin-top: 15px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.seta:hover{
+    color: rgb(160, 111, 206);
+}
+
+.tituloPages{
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.experiencias{
+    border-top:  rgb(160, 111, 206);
+}
+
+.cursos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    gap: 15px;          
+}
+
+.item{
+    border: 1px solid rgb(160, 111, 206);
+    align-items: center;
+    border-radius: 10px;
+    padding: 15px;
+}
