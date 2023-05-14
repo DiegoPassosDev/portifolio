@@ -11,9 +11,18 @@ body{
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    align-items: center;
-    padding: 16px;
+    padding: 0px 20px 0px 20px;
+}
 
+.fixtop {
+    border-bottom: 2px solid rgb(160, 111, 206);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 a{
@@ -25,7 +34,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 2px solid rgb(160, 111, 206);
+    /* border-top: 2px solid rgb(160, 111, 206); */
 }
 
 header img{    
@@ -81,6 +90,7 @@ footer p:hover{
 
 .box{
     padding: 0px 50px;
+    margin-top: 5%;
 }
 
 nav a:hover{
@@ -111,6 +121,7 @@ u{
 @media (max-width: 900px) {
     .box{
         padding: 0px !important;
+        margin-top: 80px;
     }
 
     .cursos{
@@ -151,12 +162,21 @@ u{
 }
 
 .headerVoltar{ 
-    margin-top: 15px;
-    margin-left: 10px;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    margin-left: 25px;
+}
+
+.seta{
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    height: 100%;
+    margin: 0;
+    gap: 5px;
 }
 
 .seta:hover{
