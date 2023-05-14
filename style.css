@@ -99,6 +99,7 @@ u{
     text-align: justify;
     margin-inline: 20px;
     line-height: 25px;
+    border-top: 2px solid rgb(160, 111, 206);
 }
 
 .justificado{
@@ -151,10 +152,6 @@ u{
     margin-top: 50px;
     align-items: center;
     text-align: center;
-}
-
-.experiencias{
-    border-top:  rgb(160, 111, 206);
 }
 
 .cursos{
