@@ -108,7 +108,22 @@ u{
     line-height: 25px;
 }
 
+@media (max-width: 900px) {
+    .box{
+        padding: 0px !important;
+    }
 
+    .cursos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        gap: 15px;
+        padding: 0px 50px;
+    }
+}
 
 .center:before, .center:after{
     content: '';
