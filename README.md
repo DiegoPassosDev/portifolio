@@ -20,7 +20,6 @@ Este é o meu portfólio profissional, desenvolvido para apresentar minhas **hab
 #### **1. Clonar o repositório**
 ```bash
 git clone https://github.com/DiegoPassosDev/portifolio.git
-cd seu-portifolio
 ```
 
 #### **2. Abrir o projeto no navegador**
