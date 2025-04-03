@@ -1,133 +1,422 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diego Silva Passos</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagem/logo.ico" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/c2daddfa23.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div class="fixtop">
-        <div>
-            <nav>
-                <ul class="listaCima">
-                    <li>
-                        <a href="sobre.html">Mais Sobre</a>
-                    </li>
-                    <li>
-                        <a href="projeto.html">Projetos</a>
-                    </li>
-                    <li>
-                        <a href="experiencias.html">Experiências</a>
-                    </li>
-                </ul>
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Diego Passos</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/c2daddfa23.js"
+      crossorigin="anonymous"
+    ></script>
+    
+  </head>
+  <body>
+    <header>
+      <div class="interface">
+        <div class="logo">
+          <a href="#">
+            <img src="img/logo3-SF.png" alt="Logo da FluixIT" />
+          </a>
         </div>
-    </div>
-    <div class="box">       
-        <header class="headerIndex">
-            <div class="center">
-                <img src="./imagem/DiegoPassos.png" alt="Foto">
+        <nav class="menu-desktop">
+          <ul>
+            <li><a href="#site-top">Sobre Mim</a></li>
+            <li><a href="#specialties">Especialidades</a></li>
+            <li><a href="#about-me">Formação</a></li>
+            <li><a href="#experience">Experiências</a></li>
+          </ul>
+        </nav>
+        <div class="btn-contact">
+          <a href="#talk-me">
+            <button>Contato</button>
+          </a>
+        </div>
+
+        <div class="btn-menu-open" id="btn-menu-open">
+          <i class="bi bi-list"></i>
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+          <div class="btn-close">
+            <i class="bi bi-x-lg"></i>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#site-top">Sobre Mim</a></li>
+              <li><a href="#specialties">Especialidades</a></li>
+              <li><a href="#about-me">Formação</a></li>
+              <li><a href="#experience">Experiências</a></li>
+              <li><a href="#talk-me">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="overlay-menu" id="overlay-menu"></div>
+      </div>
+    </header>
+    <main>
+      <section class="site-top" id="site-top">
+        <div class="interface">
+          <div class="flex">
+            <div class="left-icons">
+              <h1>Sobre Mim<span>.</span></h1>
+              <div>
+                <p>
+                  Olá! Meu nome é Diego Passos, sou recém-graduado em Sistemas
+                  de Informação e apaixonado por tecnologia. Minha jornada
+                  profissional inclui experiências tanto na área administrativa
+                  e logística quanto no desenvolvimento web, o que me
+                  proporcionou uma visão ampla sobre negócios, processos e
+                  soluções tecnológicas.
+                </p>
+                <p>
+                  Tenho habilidades em desenvolvimento Full Stack, utilizando
+                  Python (Flask), JavaScript (React, Next.js, TypeScript) e
+                  bancos de dados como PostgreSQL e MySQL. Além disso, possuo
+                  experiência com DevOps, cloud computing (AWS e GCP) e
+                  automação de processos.
+                </p>
+                <p>
+                  Sou uma pessoa determinada, em constante aprendizado e sempre
+                  em busca de novos desafios. Meu objetivo é contribuir com
+                  soluções inovadoras e agregar valor às empresas por meio da
+                  tecnologia.
+                </p>
+                <p>
+                  Fique à vontade para explorar meu portfólio e entrar em contato comigo!
+                </p>
+              </div>
+              <div class="btn-contact">
+                <a href="#talk-me">
+                  <button>Entre em Contato</button>
+                </a>
+              </div>
             </div>
-        </header>
-        <h1>Diego Passos</h1>
-        <h2>Desenvolvedor Full-Stack Iniciante</h2>
+            <div class="right-icons">
+              <img src="img/DiegoPassos.png" alt="Foto" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <main>
-            <section>
-                <h3 class="textMain">Sobre Mim</h3>
-                <p class="justificado">
-                    Sou um aspirante a programador apaixonado pela tecnologia e pelos desafios
-                    da programação. Com cursos básicos em Python, Java, C#, CSS3, HTML5, JavaScript, programação orientada a objetos, MySQL, montagem e manutenção de computadores, estou buscando me aprimorar constantemente para alcançar o meu objetivo de me tornar um desenvolvedor de software de alto nível.</p>
-                <p class="justificado">Além disso, possuo habilidades em Fundamentos de Nuvem da Google Cloud, o que me permite ter uma visão abrangente do mundo da computação em nuvem. Atualmente, estou cursando sistemas da informação na <a target="_blank" href="https://www.unit.br/"><ins>Universidade Tiradentes</ins></a>, onde estou aprimorando minhas habilidades e adquirindo novos conhecimentos em programação e tecnologia.</p>
-                <p class="justificado">Com a minha formação em cursos de programação e habilidades de tecnologia, sou capaz de trabalhar com diversas linguagens e plataformas, e possuo conhecimentos em solução de problemas e criação de aplicações de alta qualidade. Além disso, meu conhecimento em montagem e manutenção de computadores me ajuda a entender a infraestrutura de TI que sustenta as aplicações.</p>
-            </section>
-            <section>
-                <h3 class="textMain">Formação</h3>
-                <p class="justificado">Formado no 2º Grau na Escola Estadual Professor Abelardo Romero Dantas, na cidade de Lagarto-SE.</p>
-                <p class="justificado">Hoje graduando na Universidade Tiradentes na cidade de Aracaju-SE, com previsão de conclusão no segundo semestre de 2024. Cursando sistemas da informação, atualmente no 5º período regular, noturno.</p>
-            </section>
-            <section>
-                <h3 class="textMain">Cursos</h3>
-                <ul class="cursos" type="none">
-                    <li class="item"><i class="fa-brands fa-python"></i> Fundamentos em Python
-                        <ul>
-                            <li><a target="_blank" href="https://www.cursoemvideo.com/"><ins>Curso em Vídeo</ins></a></li>
-                            <li>Professor Gustavo Guanabara</li>
-                        </ul>
-                    </li>
-                    <li class="item"><i class="fa-brands fa-java"></i> Fundamentos em Java
-                        <ul>
-                            <li><a target="_blank" href="https://www.cursoemvideo.com/"><ins>Curso em Vídeo</ins></a></li>
-                            <li>Professor Gustavo Guanabara</li>
-                        </ul>
-                    </li>
-                    <li class="item"><i class="fa-brands fa-java"></i> Java POO
-                        <ul>
-                            <li><a target="_blank" href="https://www.cursoemvideo.com/"><ins>Curso em Vídeo</ins></a></li>
-                            <li>Professor Gustavo Guanabara</li>
-                        </ul>
-                    </li>
-                    <li class="item"><i class="fa-solid fa-database"></i> Fundamentos em MySQL
-                        <ul>
-                            <li><a target="_blank" href="https://www.cursoemvideo.com/">Curso em Vídeo</a></li>
-                            <li>Professor Gustavo Guanabara</li>
-                        </ul>
-                    </li>
-                    <li class="item"><i class="fa-brands fa-square-js"></i> Fundamentos em JavaScript
-                        <ul>
-                            <li><a target="_blank" href="https://www.cursoemvideo.com/"><ins>Curso em Vídeo</ins></a></li>
-                            <li>Professor Gustavo Guanabara</li>
-                        </ul>
-                    </li>
-                    <li class="item"><i class="fa-solid fa-file-code"></i> Fundamentos em C#
-                        <ul>
-                            <li><a target="_blank" href="https://balta.io"><ins>Balta.io Cursos</ins></a></li>
-                            <li>Professor André Baltieri</li>
-                        </ul>
-                    </li>
-                    <li class="item"><i class="fa-solid fa-code"></i> Visual Basic 6.0
-                        <ul>
-                            <li>UPGRAPH</li>
-                            <li>Professor Raimundo de Jesus</li>
-                        </ul>
-                    </li>
-                    <li class="item"><i class="fa-solid fa-screwdriver-wrench"></i> Montagem e Manutenção em
-                        Computadores
-                        <ul>
-                            <li>Telecon</li>
-                            <li>Professor Francisco Peixoto</li>
-                        </ul>
-                    </li>
-                    <li class="item"><i class="fa-solid fa-computer"></i> Operador de Computadores
-                        <ul>
-                            <li>Technoplus</li>
-                            <li>Professor Ednilson Araújo</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-        </main>
+      <section class="specialties" id="specialties">
+        <div class="interface">
+          <h2 class="title">MINHAS <span>ESPECIALIDADES.</span></h2>
+          <div class="flex">
+            <div class="box-specialties">
+              <i class="bi bi-code-square"></i>
+              <h3>Aplicações Web</h3>
+              <p>
+                Desenvolvo aplicações web modernas e eficientes, utilizando
+                tecnologias como Python (Flask, Django), JavaScript (React,
+                Next.js, TypeScript) e bancos de dados PostgreSQL e MySQL. Busco
+                criar sistemas intuitivos, responsivos e escaláveis, garantindo
+                uma experiência fluida para os usuários.
+              </p>
+            </div>
 
-        <footer>
-            <a href="https://github.com/DiegoPassosDev" target="_blank" rel="noopener noreferrer">
-                <img src="./imagem/github.svg">
-                <p>GitHub</p>
-            </a>
-            <a href="https://www.instagram.com/dev_diegopassos/" target="_blank" rel="noopener noreferrer">
-                <img src="imagem/instagram.svg">
-                <p>Instagram</p>
-            </a>
-            <a href="https://www.linkedin.com/in/diegopassosaju/" target="_blank" rel="noopener noreferrer">
-                <img src="imagem/linkedin.svg">
-                <p>Linkedin</p>
-            </a>
-        </footer>
-    </div>
+            <div class="box-specialties">
+              <i class="bi bi-motherboard"></i>
+              <h3>Automação de Processos</h3>
+              <p>
+                Especialista em RPA (Automação de Processos Robóticos), crio
+                soluções que otimizam fluxos de trabalho, reduzem tarefas
+                repetitivas e aumentam a produtividade. Utilizo Python e
+                ferramentas de ETL para integrar dados e sistemas, tornando os
+                processos mais rápidos e eficientes.
+              </p>
+            </div>
 
-</body>
+            <div class="box-specialties">
+              <i class="bi bi-database-check"></i>
+              <h3>Análise de Dados</h3>
+              <p>
+                Transformo dados brutos em informações estratégicas, aplicando
+                técnicas de ETL, modelagem de dados e visualização. Trabalho com
+                Python, SQL e ferramentas de Business Intelligence para criar
+                relatórios e dashboards que ajudam na tomada de decisões
+                baseadas em dados.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="about-me" id="about-me">
+        <div class="interface">
+          <div class="flex">
+            <div class="about-img">
+              <img src="img/Eu01.jpg" alt="Foto" />
+            </div>
+            <div class="about-text">
+              <h2>MINHA FORMAÇÃO, <span>ACADÊMICA.</span></h2>
+              <p>
+                Minha trajetória acadêmica reflete minha busca contínua por
+                conhecimento e crescimento profissional. Sou recém-formado em
+                Sistemas de Informação pela Universidade Tiradentes de Aracaju -
+                SE, onde adquiri uma base sólida em desenvolvimento de software,
+                arquitetura de sistemas, banco de dados e infraestrutura de TI.
+                Durante a graduação, tive a oportunidade de aprofundar meu
+                aprendizado em diversas áreas da tecnologia, desde programação
+                full stack até automação de processos e análise de dados.
+              </p>
+              <p>
+                Além do aprendizado teórico, sempre busquei complementar minha
+                formação com experiências práticas. Participei ativamente de
+                projetos acadêmicos e profissionais que me permitiram aplicar
+                meus conhecimentos em contextos reais, desenvolvendo soluções
+                eficientes e inovadoras. Durante minha jornada universitária,
+                também me dediquei ao estudo de Machine Learning,
+                aprofundando-me em modelos supervisionados e na avaliação de
+                algoritmos, o que fortaleceu minha capacidade analítica e
+                técnica.
+              </p>
+              <p>
+                Outro destaque da minha formação foi minha participação no
+                Programa de Mentoria da Universidade Tiradentes, onde tive a
+                oportunidade de orientar e apoiar outros alunos no
+                desenvolvimento de suas habilidades em tecnologia. Essa
+                experiência foi fundamental para aprimorar minha capacidade de
+                comunicação, liderança e colaboração, além de reforçar meu
+                compromisso com o aprendizado contínuo e o compartilhamento de
+                conhecimento.
+              </p>
+              <p>
+                Minha formação não se limita apenas à tecnologia. Com uma
+                trajetória profissional diversificada, desenvolvi habilidades
+                valiosas em gestão, logística e administração, áreas que agregam
+                um olhar estratégico ao meu perfil técnico. Essa combinação de
+                conhecimentos me permite atuar com versatilidade, compreendendo
+                tanto os desafios operacionais quanto as necessidades do negócio
+                ao desenvolver soluções tecnológicas. Busco oportunidades como
+                trainee ou júnior, onde eu possa aplicar minhas habilidades,
+                continuar evoluindo profissionalmente e contribuir com soluções
+                inovadoras para a empresa que confiar no meu potencial.
+              </p>
+              <div class="btn-social">
+                <a
+                  href="https://www.instagram.com/dev_diegopassos/"
+                  target="_blank"
+                  ><button><i class="bi bi-instagram"></i></button
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/diegopassosaju/"
+                  target="_blank"
+                  ><button><i class="bi bi-linkedin"></i></button
+                ></a>
+                <a
+                  href="https://wa.me/5579998023362?text=Olá Diego Passos, tudo bem?"
+                  target="_blank"
+                  ><button><i class="bi bi-whatsapp"></i></button
+                ></a>
+                <a href="https://github.com/DiegoPassosDev" target="_blank"
+                  ><button><i class="bi bi-github"></i></button
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience" id="experience">
+        <div class="interface">
+          <h2 class="title">EXPERIÊNCIAS <span>PROFISSIONAIS.</span></h2>
+        </div>
+        <div class="flex">
+          <div class="experience-card">
+            <div class="experience-data">
+              <h1>Beelog</h1>
+              <h3>Desenvolvedor Full Stack - PJ</h3>
+              <h4>Jun/2024 - Dez/2024</h4>
+            </div>
+            <div class="experience-data-description">
+              <p>
+                Atuei no suporte ao cliente e em ajustes técnicos, incluindo refatoração de sistemas de PHP para Python (Flask), atualização de código em React, migração e ajuste de dados na AWS e monitoramento de custos na AWS e GCP, garantindo eficiência nos processos.
+              </p>
+            </div>
+          </div>
+          <div class="experience-card">
+            <div class="experience-data">
+              <h1>The Public House</h1>
+              <h3>Desenvolvedor Full Stack - PJ</h3>
+              <h4>Jan/2024 - Mar/2024</h4>
+            </div>
+            <div class="experience-data-description">
+              <p>
+                Desenvolvi APIs, configurei rotas, implementei autenticação e criei páginas interativas com TypeScript, Next.js e React.js. Validei dados para garantir segurança e desempenho da aplicação, proporcionando uma experiência otimizada e responsiva aos usuários.
+              </p>
+            </div>
+          </div>
+          <div class="experience-card">
+            <div class="experience-data">
+              <h1>Colaborativa</h1>
+              <h3>Estágio (Mentor GCP)</h3>
+              <h4>Fev/2023 - Dez/2023</h4>
+            </div>
+            <div class="experience-data-description">
+              <p>
+                Orientei alunos nos cursos Google Cloud Foundations e Engineer, auxiliando na compreensão de conceitos, cumprimento de prazos e dúvidas. Gerenciei fóruns, promovi estudos colaborativos e avaliei o desempenho, fornecendo suporte contínuo para melhorar o aprendizado.
+              </p>
+            </div>
+          </div>
+            <div class="experience-card">
+              <div class="experience-data">
+                <h1>Secretária Estado Sergipe</h1>
+                <h3>Estágio (Suporte)</h3>
+                <h4>Ago/2022 - Fev/2023</h4>
+              </div>
+              <div class="experience-data-description">
+                <p>
+                  Atuei na digitalização e preservação de documentos, alimentação de planilhas, suporte técnico, manutenção de redes e equipamentos, além da resolução de problemas em computadores. Contribuí para a otimização dos processos administrativos e de TI da instituição.
+                </p>
+              </div>
+            </div>
+            <div class="experience-card">
+              <div class="experience-data">
+                <h1>KTCell Assis. Técnica</h1>
+                <h3>Técnico em Manutenção</h3>
+                <h4>Mar/2019 - Set/2022</h4>
+              </div>
+              <div class="experience-data-description">
+                <p>
+                  Realizava manutenção em celulares e notebooks, substituindo telas e conectores. Fazia reparos em placas eletrônicas, formatação e instalação de softwares e sistemas operacionais. Prestava suporte técnico aos clientes, garantindo qualidade e eficiência nos serviços.
+                </p>
+              </div>
+            </div>
+            <div class="experience-card">
+              <div class="experience-data">
+                <h1>Ferreira Costa</h1>
+                <h3>Auxiliar de Auditoria</h3>
+                <h4>Jul/2015 - Jun/2016</h4>
+              </div>
+              <div class="experience-data-description">
+                <p>
+                  Controlei estoques, auditei caminhões de entrega, realizei inventários e análise de relatórios. Fiz auditoria de preços e ajuste de estoque. Verifiquei produtos recebidos e corrigi erros, garantindo processos mais eficientes e maior qualidade no atendimento ao cliente.
+                </p>
+              </div>
+            </div>
+            <div class="experience-card">
+              <div class="experience-data">
+                <h1>Transvalente Logística</h1>
+                <h3>Auxiliar Administrativo</h3>
+                <h4>Ago/2012 - Jul/2015</h4>
+              </div>
+              <div class="experience-data-description">
+                <p>
+                  Monitorei cargas via GPS, controlei abastecimento e roteirizei viagens. Gerenciei notas fiscais e preenchi relatórios. Coordenei o fluxo de entrada e saída de mercadorias, garantindo eficiência nas operações e redução de custos logísticos para a empresa.
+                </p>
+              </div>
+            </div>
+            <div class="experience-card">
+              <div class="experience-data">
+                <h1>MRM Construtora</h1>
+                <h3>Auxiliar Administrativo</h3>
+                <h4>Jul/2011 - Out/2011</h4>
+              </div>
+              <div class="experience-data-description">
+                <p>
+                  Gerenciei o controle de estoque, liberação de materiais, manutenção de maquinário e requisições de equipamentos. Realizei inventários periódicos, identifiquei divergências e implementei medidas corretivas para otimizar processos e evitar desperdícios nos projetos.
+                </p>
+              </div>
+            </div>
+            <div class="experience-card">
+              <div class="experience-data">
+                <h1>Rede Conecta</h1>
+                <h3>Almoxarife</h3>
+                <h4>Abr/2010 - Dez/2010</h4>
+              </div>
+              <div class="experience-data-description">
+                <p>
+                  Controlei estoques, recebi e liberei materiais, coordenei equipe e fiz inventários. Preenchi requisições, gerenciei EPIs e utilizei os sistemas Sico, Microsiga e CDV. Mantive a organização e controle de insumos, garantindo maior eficiência nas operações logísticas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="talk-me" id="talk-me">
+        <div class="interface">
+          <h2 class="title">FALE <span>COMIGO.</span></h2>
+          <form action="" method="POST" id="contact-form">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Seu Nome Completo"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Seu E-mail"
+              required
+            />
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="Seu Celular (Opcional)"
+            />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Sua Mensagem"
+              required
+            ></textarea>
+            <div class="btn-send">
+              <input type="submit" value="Enviar" />
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </main>
+    <footer>
+      <div class="interface">
+        <div class="line-footer">
+          <div class="flex">
+            <div class="logo-footer">
+              <img class="img-footer" src="img/logo3-SF.png" alt="logo" />
+            </div>
+            <div class="btn-social">
+              <a
+                href="https://www.instagram.com/dev_diegopassos/"
+                target="_blank"
+                ><button><i class="bi bi-instagram"></i></button
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/diegopassosaju/"
+                target="_blank"
+                ><button><i class="bi bi-linkedin"></i></button
+              ></a>
+              <a
+                href="https://wa.me/5579998023362?text=Olá Diego Passos, tudo bem?"
+                target="_blank"
+                ><button><i class="bi bi-whatsapp"></i></button
+              ></a>
+              <a href="https://github.com/DiegoPassosDev" target="_blank"
+                ><button><i class="bi bi-github"></i></button
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="line-footer line-down">
+          <p>
+            <i class="bi bi-envelope-fill"></i>
+            <a href="mailto:fluixit@gmail.com.br">fluixit@gmail.com.br</a>
+          </p>
+          <p>© 2025 - FluixIT - Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  <script src="script.js" defer></script>
+  </body>
 </html>
