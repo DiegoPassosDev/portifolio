@@ -36,6 +36,6 @@ Este é um projeto pessoal, mas sugestões de melhorias são sempre bem-vindas!
 Este projeto está sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
-💡 **Autor:** Seu Nome  
+💡 **Autor:** Diego Passos  
 📧 **Contato:** fluixit@gmail.com
 
