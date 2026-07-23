@@ -8,11 +8,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <title>Diego Passos - Desenvolvedor Full Stack - JR</title>
+    <title>Diego Passos - Desenvolvedor Full Stack</title>
     <meta
       name="description"
       content="Portfólio de Diego Passos - Desenvolvedor Full Stack especializado em Python, React, AWS e automação de processos"
     />
+    <meta property="og:title" content="Diego Passos - Desenvolvedor Full Stack" />
+    <meta
+      property="og:description"
+      content="Portfólio de Diego Passos - Desenvolvedor Full Stack especializado em Python, React, AWS e automação de processos"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/DiegoPassos.png" />
+    <meta property="og:locale" content="pt_BR" />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
     <script
@@ -21,7 +29,8 @@
     ></script>
   </head>
   <body>
-    <header>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+    <header role="banner">
       <div class="interface">
         <div class="logo">
           <a href="#">
@@ -67,8 +76,8 @@
         <div class="overlay-menu" id="overlay-menu"></div>
       </div>
     </header>
-    <main>
-      <section class="site-top" id="site-top">
+    <main id="main-content" role="main">
+      <section class="site-top" id="site-top" aria-label="Sobre Mim">
         <div class="interface">
           <div class="flex">
             <div class="left-icons">
@@ -110,13 +119,14 @@
               <img
                 src="img/DiegoPassos.png"
                 alt="Diego Passos - Desenvolvedor Full Stack"
+                loading="lazy"
               />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="specialties" id="specialties">
+      <section class="specialties" id="specialties" aria-label="Especialidades">
         <div class="interface">
           <h2 class="title">MINHAS <span>ESPECIALIDADES.</span></h2>
           <div class="flex">
@@ -160,7 +170,7 @@
         </div>
       </section>
 
-      <section class="technical-skills" id="technical-skills">
+      <section class="technical-skills" id="technical-skills" aria-label="Habilidades Técnicas">
         <div class="interface">
           <h2 class="title">HABILIDADES <span>TÉCNICAS.</span></h2>
           <div class="skills-container">
@@ -274,16 +284,24 @@
                 <i class="bi bi-check-circle-fill"></i>
                 <span>Resolução de Problemas</span>
               </div>
+              <div class="soft-skill-item">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Criatividade</span>
+              </div>
+              <div class="soft-skill-item">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Gestão de Tempo</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="about-me" id="about-me">
+      <section class="about-me" id="about-me" aria-label="Formação Acadêmica">
         <div class="interface">
           <div class="flex">
             <div class="about-img">
-              <img src="img/Eu01.jpg" alt="Diego Passos" />
+              <img src="img/Eu01.jpg" alt="Diego Passos" loading="lazy" />
             </div>
             <div class="about-text">
               <h2>MINHA FORMAÇÃO<span> ACADÊMICA.</span></h2>
@@ -383,7 +401,7 @@
           <div class="projects-grid">
             <a href="https://beelog.app/" target="_blank" rel="noopener noreferrer" class="project-card">
               <div class="project-image">
-                <img src="img/beelog-logo.jpg" alt="Logo Beelog" loading="lazy" />
+                <img src="img/logo-beelog.png" alt="Logo Beelog" loading="lazy" />
               </div>
               <div class="project-info">
                 <h3>Beelog - Sistema Web</h3>
@@ -399,7 +417,7 @@
 
             <a href="https://www.pubcopilot.com/" target="_blank" rel="noopener noreferrer" class="project-card">
               <div class="project-image">
-                <img src="img/pub-logo.png" alt="Logo The Public House" loading="lazy" />
+                <img src="img/logo-pub.png" alt="Logo The Public House" loading="lazy" />
               </div>
               <div class="project-info">
                 <h3>The Public House - API & Frontend</h3>
@@ -432,7 +450,7 @@
         </div>
       </section>
 
-      <section class="experience" id="experience">
+      <section class="experience" id="experience" aria-label="Experiências Profissionais">
         <div class="interface">
           <h2 class="title">EXPERIÊNCIAS <span>PROFISSIONAIS.</span></h2>
           <div class="flex">
@@ -563,40 +581,77 @@
                 </ul>
               </div>
             </div>
+
+            <div class="experience-card">
+              <div class="experience-data">
+                <h1>Secretaria Estado Sergipe</h1>
+                <h3>Estágio - Suporte TI</h3>
+                <h4>Ago/2022 - Fev/2023</h4>
+              </div>
+              <div class="experience-data-description">
+                <ul>
+                  <li>
+                    Digitalização e preservação de documentos institucionais
+                  </li>
+                  <li>Alimentação e gestão de planilhas administrativas</li>
+                  <li>
+                    Suporte técnico a usuários e resolução de problemas em TI
+                  </li>
+                  <li>Manutenção preventiva e corretiva de equipamentos</li>
+                  <li>Configuração e manutenção de redes locais</li>
+                  <li>
+                    Otimização de processos administrativos e de tecnologia
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="talk-me" id="talk-me">
+      <section class="talk-me" id="talk-me" aria-label="Contato">
         <div class="interface">
           <h2 class="title">FALE <span>COMIGO.</span></h2>
-          <form action="" method="POST" id="contact-form">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Seu Nome Completo"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Seu E-mail"
-              required
-            />
-            <input
-              type="text"
-              name="phone"
-              id="phone"
-              placeholder="Seu Celular (Opcional)"
-            />
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Sua Mensagem"
-              required
-            ></textarea>
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Nome Completo</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Seu Nome Completo"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Seu E-mail"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Celular (Opcional)</label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Seu Celular"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Sua Mensagem"
+                required
+              ></textarea>
+            </div>
+            <div class="form-feedback" id="form-feedback" role="alert" aria-live="polite"></div>
             <div class="btn-send">
               <input type="submit" value="Enviar" />
             </div>
@@ -653,10 +708,10 @@
             <i class="bi bi-envelope-fill"></i>
             <a href="mailto:contato@meusite.com.br">fluixit@gmail.com</a>
           </p>
-          <p>© 2025 - FluixIT</p>
+          <p>© 2026 - FluixIT</p>
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
-<script src="script.js"></script>
