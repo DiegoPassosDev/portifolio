@@ -696,16 +696,15 @@ section.experience {
 }
 
 section.experience .flex {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   margin-top: 60px;
-  justify-items: center;
+  justify-content: center;
 }
 
 .experience-card {
-  width: 100%;
-  max-width: 380px;
+  width: 380px;
   border-radius: 30px;
   overflow: hidden;
   display: flex;
@@ -715,7 +714,7 @@ section.experience .flex {
     transform 0.3s ease,
     box-shadow 0.3s ease;
   background: #2c2c2c;
-  height: 100%;
+  min-height: 420px;
 }
 
 .experience-card:hover {
@@ -1074,12 +1073,12 @@ footer .line-footer p a:hover {
   }
 
   section.experience .flex {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: 30px;
   }
 
   .experience-card {
-    max-width: 100%;
+    width: 100%;
   }
 
   .experience-data h1 {
@@ -1123,7 +1122,7 @@ footer .line-footer p a:hover {
   }
 
   .experience-card {
-    max-width: 100%;
+    width: 100%;
   }
 }
 
