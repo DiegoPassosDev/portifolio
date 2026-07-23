@@ -34,6 +34,7 @@
             <li><a href="#specialties">Especialidades</a></li>
             <li><a href="#technical-skills">Habilidades</a></li>
             <li><a href="#about-me">Formação</a></li>
+            <li><a href="#projects">Projetos</a></li>
             <li><a href="#experience">Experiências</a></li>
           </ul>
         </nav>
@@ -57,6 +58,7 @@
               <li><a href="#specialties">Especialidades</a></li>
               <li><a href="#technical-skills">Habilidades</a></li>
               <li><a href="#about-me">Formação</a></li>
+              <li><a href="#projects">Projetos</a></li>
               <li><a href="#experience">Experiências</a></li>
               <li><a href="#talk-me">Contato</a></li>
             </ul>
@@ -313,35 +315,117 @@
                 inovadoras e impactantes, e é isso que me motiva a continuar
                 aprendendo e me aprimorando constantemente.
               </p>
-              <div class="btn-social">
-                <a
-                  href="https://www.instagram.com/dev_diegopassos/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram"
-                  ><button><i class="bi bi-instagram"></i></button
-                ></a>
-                <a
-                  href="https://www.linkedin.com/in/diegopassosaju/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn"
-                  ><button><i class="bi bi-linkedin"></i></button
-                ></a>
-                <a
-                  href="https://wa.me/5579998023362?text=Olá Diego Passos, tudo bem?"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="WhatsApp"
-                  ><button><i class="bi bi-whatsapp"></i></button
-                ></a>
-                <a
-                  href="https://github.com/DiegoPassosDev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="GitHub"
-                  ><button><i class="bi bi-github"></i></button
-                ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects" aria-label="Projetos">
+        <div class="interface">
+          <h2 class="title">MEUS <span>PROJETOS.</span></h2>
+
+          <div class="project-featured">
+            <div class="featured-badge">Projeto Destaque</div>
+            <div class="project-featured-content">
+              <div class="project-featured-image">
+                <img src="img/ordex-logo.png" alt="Logo Ordex" loading="lazy" />
+              </div>
+              <div class="project-featured-info">
+                <h3>Ordex - Sistema de Gestão de Restaurante</h3>
+                <p>Sistema completo de gestão de restaurante com pedidos em tempo real via WebSocket. Inclui telas para garçom, cozinha, bar, caixa, gerente e clientes (mesas). Arquitetura full stack com autenticação JWT e comunicação em tempo real.</p>
+                <div class="project-featured-tech">
+                  <div class="tech-group">
+                    <span class="tech-label">Frontend</span>
+                    <div class="project-tags">
+                      <span class="skill-tag">Next.js 15</span>
+                      <span class="skill-tag">Tailwind CSS</span>
+                      <span class="skill-tag">Socket.IO</span>
+                      <span class="skill-tag">Zustand</span>
+                    </div>
+                  </div>
+                  <div class="tech-group">
+                    <span class="tech-label">Backend</span>
+                    <div class="project-tags">
+                      <span class="skill-tag">NestJS</span>
+                      <span class="skill-tag">Prisma ORM</span>
+                      <span class="skill-tag">PostgreSQL</span>
+                      <span class="skill-tag">Redis</span>
+                    </div>
+                  </div>
+                  <div class="tech-group">
+                    <span class="tech-label">Infra</span>
+                    <div class="project-tags">
+                      <span class="skill-tag">Docker</span>
+                      <span class="skill-tag">WebSocket</span>
+                      <span class="skill-tag">JWT</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-featured-features">
+                  <span><i class="bi bi-lightning-fill"></i> Pedidos em tempo real</span>
+                  <span><i class="bi bi-people-fill"></i> Multi-usuário (6 roles)</span>
+                  <span><i class="bi bi-phone-fill"></i> Telas para cada perfil</span>
+                  <span><i class="bi bi-clock-fill"></i> Timer de preparo</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://ordex-eta.vercel.app/login" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                    <i class="bi bi-box-arrow-up-right"></i> Ver Demo
+                  </a>
+                  <a href="https://github.com/DiegoPassosDev/ordex" target="_blank" rel="noopener noreferrer" class="project-link-btn secondary">
+                    <i class="bi bi-github"></i> Código Fonte
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="projects-subtitle">Outros Projetos</h3>
+          <div class="projects-grid">
+            <a href="https://beelog.app/" target="_blank" rel="noopener noreferrer" class="project-card">
+              <div class="project-image">
+                <img src="img/beelog-logo.jpg" alt="Logo Beelog" loading="lazy" />
+              </div>
+              <div class="project-info">
+                <h3>Beelog - Sistema Web</h3>
+                <p>Sistema de gestão e monitoramento desenvolvido com Python (Flask) e React. Migração de PHP para Python com melhorias de performance.</p>
+                <div class="project-tags">
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">Flask</span>
+                  <span class="skill-tag">React</span>
+                  <span class="skill-tag">AWS</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://www.pubcopilot.com/" target="_blank" rel="noopener noreferrer" class="project-card">
+              <div class="project-image">
+                <img src="img/pub-logo.png" alt="Logo The Public House" loading="lazy" />
+              </div>
+              <div class="project-info">
+                <h3>The Public House - API & Frontend</h3>
+                <p>Desenvolvimento de APIs RESTful com TypeScript e Node.js, interfaces interativas com Next.js e React.js.</p>
+                <div class="project-tags">
+                  <span class="skill-tag">TypeScript</span>
+                  <span class="skill-tag">Node.js</span>
+                  <span class="skill-tag">Next.js</span>
+                  <span class="skill-tag">React</span>
+                </div>
+              </div>
+            </a>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img src="img/logo3-SF.png" alt="Projeto Automação" loading="lazy" />
+              </div>
+              <div class="project-info">
+                <h3>Automação de Processos</h3>
+                <p>Soluções de RPA com Python, N8N e Selenium para otimização de fluxos de trabalho e automação de tarefas repetitivas.</p>
+                <div class="project-tags">
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">N8N</span>
+                  <span class="skill-tag">Selenium</span>
+                  <span class="skill-tag">ETL</span>
+                </div>
               </div>
             </div>
           </div>

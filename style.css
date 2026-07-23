@@ -396,6 +396,282 @@ section.about-me .flex {
   line-height: 1.6;
 }
 
+section.projects {
+  padding: 80px 4%;
+}
+
+.projects-subtitle {
+  text-align: center;
+  font-size: 24px;
+  color: #c5c5c5;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.project-featured {
+  margin-top: 50px;
+  background: linear-gradient(135deg, rgba(74, 155, 229, 0.1) 0%, rgba(44, 99, 151, 0.1) 100%);
+  border: 2px solid #4a9be5;
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s;
+}
+
+.project-featured:hover {
+  box-shadow: 0 8px 40px rgba(74, 155, 229, 0.3);
+}
+
+.featured-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #4a9be5;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.project-featured-content {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  align-items: center;
+}
+
+.project-featured-image {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2c2c2c;
+  border-radius: 20px;
+  border: 1px solid rgba(74, 155, 229, 0.2);
+}
+
+.project-featured-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.project-featured-info {
+  flex: 1;
+}
+
+.project-featured-info h3 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.project-featured-info > p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #c5c5c5;
+  margin-bottom: 20px;
+}
+
+.project-featured-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.tech-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tech-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #4a9be5;
+}
+
+.project-featured-tech .project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.project-featured-tech .skill-tag {
+  font-size: 12px;
+  padding: 5px 12px;
+}
+
+.project-featured-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.project-featured-features span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #c5c5c5;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.project-featured-features i {
+  color: #4a9be5;
+  font-size: 14px;
+}
+
+.project-links {
+  display: flex;
+  gap: 12px;
+}
+
+.project-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  background: #4a9be5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.project-link-btn:hover {
+  box-shadow: 0 0 12px #25d2de;
+  transform: scale(1.05);
+}
+
+.project-link-btn.secondary {
+  background: transparent;
+  border: 2px solid #4a9be5;
+}
+
+.project-link-btn.secondary:hover {
+  background: rgba(74, 155, 229, 0.1);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: #2c2c2c;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(74, 155, 229, 0.2);
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(74, 155, 229, 0.4);
+}
+
+a.project-card::after {
+  content: "\2197";
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-size: 18px;
+  color: #4a9be5;
+  opacity: 0;
+  transition: 0.2s;
+  background: #2c2c2c;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+a.project-card:hover::after {
+  opacity: 1;
+}
+
+.project-info h3 i {
+  font-size: 16px;
+  margin-left: 6px;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.project-card:hover .project-info h3 i {
+  opacity: 1;
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #727272;
+}
+
+.project-image img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+.project-info {
+  padding: 25px;
+}
+
+.project-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #4a9be5;
+}
+
+.project-info p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #c5c5c5;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-tags .skill-tag {
+  font-size: 12px;
+  padding: 5px 12px;
+}
+
 .btn-social button {
   width: 60px;
   height: 60px;
@@ -735,6 +1011,62 @@ footer .line-footer p a:hover {
     max-width: 350px;
     margin: 0 auto;
     display: block;
+  }
+
+  section.projects {
+    padding: 40px 8%;
+  }
+
+  .project-featured-content {
+    flex-direction: column;
+    padding: 30px;
+    gap: 24px;
+  }
+
+  .project-featured-image {
+    width: 160px;
+    height: 160px;
+  }
+
+  .project-featured-info h3 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .project-featured-info > p {
+    text-align: center;
+  }
+
+  .project-featured-tech {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-featured-tech .project-tags {
+    justify-content: center;
+  }
+
+  .tech-group {
+    align-items: center;
+  }
+
+  .project-featured-features {
+    justify-content: center;
+  }
+
+  .project-links {
+    justify-content: center;
+  }
+
+  .featured-badge {
+    position: static;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   section.experience {
